@@ -33,10 +33,10 @@ const About = () => {
                         </article>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Distinctio perspiciatis facilis soluta exercitationem magnam nemo ea
-                        voluptatem adipisci officia dolore atque,
-                        sapiente quam! Omnis, eos temporibus dolorem facilis corporis rem?
+                        Hello!! I am Tahiry Mariano. A student in the third year of a License at ISPM, in the mention
+                        of computers and telecommunication, following the electronics, computer systems and artificial intelligence (ESIIA) sector.<br />
+                        I am a young enthusiast in the world of IT, especially web or mobile development, looking for an internship to develop my professional skills and
+                        validate my bachelor's degree.
                     </p>
                     <a href="#contact" className='btn btn-primary'>Let's talk</a>
                 </div>

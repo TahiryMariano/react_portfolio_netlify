@@ -1,5 +1,5 @@
 header {
-    height: 85vh;
+    height: 100vh;
     padding-top: 3rem;
     overflow: hidden;
 }
@@ -16,6 +16,19 @@ header {
     align-items: center;
     /* justify-content: center; */
     gap: 2rem;
+}
+
+.details__texte h5 {
+    margin-top: 4rem;
+}
+
+.details__texte h1 {
+    color: var(--color-primary);
+    /* color: #F57F17; */
+}
+
+.details__texte .description {
+    margin-top: 5rem;
 }
 
 .details__image {

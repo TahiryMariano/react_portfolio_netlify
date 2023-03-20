@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Nav.css';
+import ScrollSpy from 'react-scrollspy';
 
 const Nav = () => {
 
