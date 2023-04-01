@@ -9,8 +9,8 @@ const HeaderSocials = () => {
             <a href="https://github.com" target="_blank">
                 <i class="ri-github-fill"></i>
             </a>
-            <a href="https://dribble.com" target="_blank">
-                <i class="ri-dribbble-line"></i>
+            <a href="https://m.facebook.com/100005181618755/" target="_blank">
+                <i class="ri-facebook-circle-fill"></i>
             </a>
         </div>
     )

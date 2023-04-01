@@ -42,7 +42,7 @@ const Experiences = () => {
                         <article className='experience__details'>
                             <i className="ri-checkbox-circle-fill experience__details-icon"></i>
                             <div>
-                                <h4>TALWIND</h4>
+                                <h4>SEMANTIC UI</h4>
                                 <small className='text-light'>Experienced</small>
                             </div>
                         </article>

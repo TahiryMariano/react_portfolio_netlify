@@ -1,10 +1,12 @@
 header {
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 3rem;
-    overflow: hidden;
+    padding-bottom: 5rem;
+    /* overflow: scroll; */
 }
 
 .header__container {
+    box-sizing: border-box;
     text-align: center;
     height: 100%;
     position: relative;
@@ -18,9 +20,12 @@ header {
     gap: 2rem;
 }
 
-.details__texte h5 {
+/* .details__texte h3 {
     margin-top: 4rem;
-}
+} */
+/* .details__texte {
+    margin-top: 0;
+} */
 
 .details__texte h1 {
     color: var(--color-primary);
@@ -82,6 +87,7 @@ header {
 /* =========HEADER SOCIALS========= */
 .header__socials {
     display: flex;
+    margin-top: 3rem;
     flex-direction: column;
     align-items: center;
     gap: 0.4rem;
@@ -103,34 +109,49 @@ header {
 .scroll__down {
     position: absolute;
     right: -2.6rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     /* bottom: 5rem; */
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
 }
 
-/* MEDIA QUERIES (MEDIUM DEVICES) */
-@media screen and (max-width:1024px) {
-    header {
-        height: 50vh;
+/* ipad,some Android tablet */
+@media screen and (max-width:1024px) and (min-width:721px) {
+    body {
+        line-height: 1.7;
+        font-size: large;
     }
 
+    /* header {
+        height: 90vh;
+    } */
+
     .details {
-        margin: 0 4rem 0 0;
+        display: grid;
+        grid-template-columns: 60% 30%;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 2rem;
+    }
+
+    .details__texte {
+        margin-top: 5rem;
     }
 
     .details__image {
-        width: 300px;
-        height: 300px;
-        margin: 0 10px 0 4px;
+        margin-bottom: 7rem;
+        height: 260px;
+        width: 260px;
     }
 }
 
-/* MEDIA QUERIES (SMALL DEVICES) */
-@media screen and (max-width:600px) {
-    header {
-        height: 80vh;
+
+/* iphone(landscape),many android and blackberry phones */
+@media screen and (max-width:720px) and (min-width:481px) {
+    body {
+        line-height: 1.5;
+        font-size: large;
     }
 
     .details {
@@ -140,26 +161,83 @@ header {
     }
 
     .details__image {
-        width: 250px;
-        height: 250px;
-        margin: 0 0 0 4px;
+        height: 220px;
+        width: 220px;
     }
 
     .header__socials,
     .scroll__down {
         display: none;
     }
+
 }
 
-/* MEDIA QUERIES (EXTRA SMALL DEVICE) */
-@media screen and (max-width:375px) {
-    header {
-        height: 85vh;
+/* iphone, many Android and Blackberry phones */
+@media screen and (max-width:480px) and (min-width:321px) {
+    body {
+        line-height: 1.5;
+        font-size: medium;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
     }
 
     .details__image {
-        width: 250px;
-        height: 250px;
-        margin-top: -40px;
+        height: 180px;
+        width: 180px;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+
+    .details__texte h1,
+    h2,
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .details__texte .description {
+        font-size: 0.8rem !important;
+        margin-top: 1.5rem;
+    }
+}
+
+/* old resolution phones */
+@media screen and (max-width:320px) {
+    body {
+        line-height: 1.5;
+        font-size: small;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .details__image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .details__texte h1,
+    h2,
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .details__texte .description {
+        font-size: 0.8rem !important;
+        margin-top: 1.5rem;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
     }
 }
