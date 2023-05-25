@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import './Nav.css';
 
 const Nav = () => {
-    const navRef = useRef()
+    const navRef = useRef();
     const [activeNav, setActiveNav] = useState('#');
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive__nav")
